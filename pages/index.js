@@ -15,7 +15,7 @@ export default function Home() {
         <h1>Practice App</h1><br/>
         <div>
           <p>Hii There, This is for practice.</p>
-          <p>HIIIII</p>
+          <p>Hello world</p>
         </div>
       </main>
 
