@@ -12,7 +12,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Practice App</h1>
+        <h1>Practice App</h1><br/>
+        <div>
+          <p>Hii There, This is for practice.</p>
+        </div>
       </main>
 
       {/* <main className={styles.main}>
