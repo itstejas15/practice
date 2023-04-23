@@ -16,6 +16,7 @@ export default function Home() {
         <div>
           <p>Hii There, This is for practice.</p>
           <p>Hello world</p>
+          <p>Mobile test</p>
         </div>
       </main>
 
