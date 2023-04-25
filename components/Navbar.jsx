@@ -67,7 +67,7 @@ const Navbar = () => {
               <Link href="/#projects">PROJECTS</Link>
             </li>
             <li className="ml-10 text-sm hover:border-b hover:text-blue-600">
-              <Link href="/#resume">RESUME</Link>
+              <Link href="https://practice-itstejas.vercel.app/Tejas-Patil-Resume.pdf">RESUME</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b hover:text-blue-600">
               <Link href="/#contact">Contact</Link>
@@ -146,7 +146,7 @@ const Navbar = () => {
                   Projects
                 </li>
               </Link>
-              <Link href="/#resume">
+              <Link href="https://practice-itstejas.vercel.app/Tejas-Patil-Resume.pdf">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Resume
                 </li>
@@ -188,7 +188,7 @@ const Navbar = () => {
                     <AiOutlineMail /> 
                   </div>
                 </Link>
-                <Link href="/#resume">
+                <Link href="https://practice-itstejas.vercel.app/Tejas-Patil-Resume.pdf">
                   <div
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"

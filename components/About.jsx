@@ -1,19 +1,19 @@
 import Image from "next/image";
 import AboutImg from "../public/assets/icons/AboutImg.jpg";
-// import Resume from "../public/assets/pdf/Tejas-Patil-Resume.pdf";
+import Btn from "./Btn";
 
 // const PDF = "http://localhost:3000/Tejas-Patil-Resume.pdf";
-const PDF = "https://practice-itstejas.vercel.app//Tejas-Patil-Resume.pdf";
+// const PDF = "https://practice-itstejas.vercel.app/Tejas-Patil-Resume.pdf";
 const About = () => {
-  const downloadFileAtURL = (url) => {
-    const fileName = url.split("/").pop();
-    const aTag = document.createElement("a");
-    aTag.href = url;
-    aTag.setAttribute("download", fileName);
-    document.body.appendChild(aTag);
-    aTag.click();
-    aTag.remove();
-  };
+//   const downloadFileAtURL = (url) => {
+//     const fileName = url.split("/").pop();
+//     const aTag = document.createElement("a");
+//     aTag.href = url;
+//     aTag.setAttribute("download", fileName);
+//     document.body.appendChild(aTag);
+//     aTag.click();
+//     aTag.remove();
+//   };
   return (
     <div
       id="about"
@@ -50,16 +50,17 @@ const About = () => {
             peers whenever i get time.
           </p>
 
-          <p className="py-2 text-gray-600">
-            Download my{" "}
-            <button
+          <p className="py-2 text-gray-600 flex">
+            Download my&nbsp;
+            {/* <button
               onClick={() => {
                 downloadFileAtURL(PDF);
               }}
               className="p-2 text-white underline cursor-pointer"
             >
               Resume
-            </button>
+            </button> */}
+            <Btn />
           </p>
         </div>
         <div className="mt-10 w-full h-auto m-auto sm:mt-40 lg:mt-14 shadow-lg shadow-gray-300 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
