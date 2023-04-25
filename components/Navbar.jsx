@@ -28,6 +28,11 @@ const Navbar = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
+  const sendEmail = () => {
+    setNav(!nav)
+    window.open("mailto:er.tejaspatil15@gmail.com?subject=SendMail&body=Description");
+  };
+
   return (
     <div
       style={{ backgroundColor: "#ecf0f3" }}
@@ -175,9 +180,9 @@ const Navbar = () => {
                     <FaGithub /> 
                   </div>
                 </a>
-                <Link href="/#contact">
+                <Link href="/">
                   <div
-                    onClick={() => setNav(!nav)}
+                    onClick={sendEmail}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                   >
                     <AiOutlineMail /> 
