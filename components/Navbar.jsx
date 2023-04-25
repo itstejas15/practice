@@ -125,7 +125,7 @@ const Navbar = () => {
               </p>
             </div>
           </div>
-          <div className="py-4 flex flex-col">
+          <div className="py-4 flex flex-col snap-y">
             <ul className="uppercase">
               <Link href="/">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
@@ -189,7 +189,7 @@ const Navbar = () => {
                     <AiOutlineMail /> 
                   </div>
                 </Link>
-                <Link href="/resume">
+                <Link href="/#resume">
                   <div
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
