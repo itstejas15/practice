@@ -37,36 +37,34 @@ const Navbar = () => {
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-1 2xl:px-16">
         <Link href="/">
-          {/* <a> */}
           <Image
             src={TP}
             alt="/"
-            width="115"
-            height="45"
-            className="cursor-pointer pt-6 fill-orange-700 "
+            width={95}
+            height="35"
+            className="cursor-pointer sm:pt-0 pt-2 fill-orange-700 "
           />
-          {/* </a>  */}
         </Link>
         <div>
           <ul style={{ color: "#1f2937" }} className="hidden md:flex pr-8">
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/">Home</Link>
+            <li className="ml-10 text-sm hover:border-b hover:text-blue-600">
+              <Link href="/">HOME</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#about">About</Link>
+            <li className="ml-10 text-sm hover:border-b hover:text-blue-600">
+              <Link href="/#about">ABOUT</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#skills">Skills</Link>
+            <li className="ml-10 text-sm hover:border-b hover:text-blue-600">
+              <Link href="/#skills">SKILLS</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#projects">Projects</Link>
+            <li className="ml-10 text-sm hover:border-b hover:text-blue-600">
+              <Link href="/#projects">PROJECTS</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#resume">Resume</Link>
+            <li className="ml-10 text-sm hover:border-b hover:text-blue-600">
+              <Link href="/#resume">RESUME</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm uppercase hover:border-b hover:text-blue-600">
               <Link href="/#contact">Contact</Link>
             </li>
           </ul>
@@ -93,16 +91,14 @@ const Navbar = () => {
         className={
           nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
         }
-        onClick={handleNav}
       >
         {/* Side Drawer Menu */}
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen scroll-auto bg-[#ecf0f3] p-10 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              : "fixed left-[-130%] top-0 p-10 ease-in duration-500"
           }
-          onClick={''}
         >
           <div>
             <div className="flex w-full items-center justify-between">
