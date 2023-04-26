@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import HomePage from '../components/HomePage'
 import About from '../components/About'
+import Skills from '../components/Skills'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <HomePage />
       <About />
+      <Skills />
     </div>
   )
 }
