@@ -40,4 +40,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 1) TP Name Logo created from app.logo.com
 2) Other Icons taken from uxwing.com // SVG LOGOS // react-icons : "^4.8.0"
 3) Used Tailwind css for better responsiveness.
-4) 
