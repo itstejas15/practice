@@ -12,9 +12,9 @@ import GIT from "../public/assets/skills/GIT.png";
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2">
+    <div id="skills" className="w-full lg:h-auto overflow-auto mb-10 pb-8 p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl mb-4 tracking-widest text-[#5651e5]">MY SKILLS</p>
+        <p className="text-xl mb-2 mt-20 tracking-widest text-[#5651e5]">MY SKILLS</p>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">

@@ -63,14 +63,14 @@ const Navbar = () => {
             <li className="ml-10 text-sm hover:border-b hover:text-blue-600">
               <Link href="/#skills">SKILLS</Link>
             </li>
-            <li className="ml-10 text-sm hover:border-b hover:text-blue-600">
+            {/* <li className="ml-10 text-sm hover:border-b hover:text-blue-600">
               <Link href="/#projects">PROJECTS</Link>
-            </li>
+            </li> */}
             <li className="ml-10 text-sm hover:border-b hover:text-blue-600">
               <Link href="https://practice-itstejas.vercel.app/Tejas-Patil-Resume.pdf">RESUME</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b hover:text-blue-600">
-              <Link href="/#contact">Contact</Link>
+              <Link onClick={sendEmail} href="/#contact">Contact</Link>
             </li>
           </ul>
           {/* Hamburger Icon */}
@@ -141,17 +141,17 @@ const Navbar = () => {
                   Skills
                 </li>
               </Link>
-              <Link href="/#projects">
+              {/* <Link href="/#projects">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Projects
                 </li>
-              </Link>
+              </Link> */}
               <Link href="https://practice-itstejas.vercel.app/Tejas-Patil-Resume.pdf">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Resume
                 </li>
               </Link>
-              <Link href="/#contact">
+              <Link onClick={sendEmail} href="/#contact">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Contact
                 </li>
