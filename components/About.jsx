@@ -19,7 +19,7 @@ const About = () => {
 			<div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
 				<div className='col-span-2 pt-14'>
 					<p className='uppercase text-xl tracking-widest text-[#5651e5]'>About</p>
-					<h2 className='py-4'>
+					<h2 className='py-4 dark:text-gray-200'>
 						Tejas Patil <span className='text-sm sm:text-2xl'>| Software Engineer</span>
 					</h2>
 					<p className='py-2 text-gray-600 dark:text-gray-300'>
