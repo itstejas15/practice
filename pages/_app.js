@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar'
 import '../styles/globals.css'
 import { Analytics } from '@vercel/analytics/react'
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState();
@@ -12,6 +12,17 @@ function MyApp({ Component, pageProps }) {
       setTheme('dark')
     }
   }
+
+  useEffect(()=>{
+    if(window.matchMedia){
+      if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+        setTheme('dark')
+      } else {
+        setTheme('light')
+      }
+    }
+  },[])
+
   return (
     <>
       <div className={theme}>

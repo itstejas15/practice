@@ -5,15 +5,15 @@ import Btn from "./Btn"
 // const PDF = "http://localhost:3000/Tejas-Patil-Resume.pdf";
 // const PDF = "https://practice-itstejas.vercel.app/Tejas-Patil-Resume.pdf";
 const About = () => {
-	//   const downloadFileAtURL = (url) => {
-	//     const fileName = url.split("/").pop();
-	//     const aTag = document.createElement("a");
-	//     aTag.href = url;
-	//     aTag.setAttribute("download", fileName);
-	//     document.body.appendChild(aTag);
-	//     aTag.click();
-	//     aTag.remove();
-	//   };
+	// const downloadFileAtURL = (url) => {
+	// 	const fileName = url.split("/").pop()
+	// 	const aTag = document.createElement("a")
+	// 	aTag.href = url
+	// 	aTag.setAttribute("download", fileName)
+	// 	document.body.appendChild(aTag)
+	// 	aTag.click()
+	// 	aTag.remove()
+	// }
 	return (
 		<div id='about' className='dark:bg-gray-800 w-full md:h-screen p-2 flex items-center py-16 scroll-smooth ease-linear duration-700 delay-700'>
 			<div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
@@ -38,13 +38,13 @@ const About = () => {
 					<p className='py-2 text-gray-600 flex'>
 						Download my&nbsp;
 						{/* <button
-              onClick={() => {
-                downloadFileAtURL(PDF);
-              }}
-              className="p-2 text-white underline cursor-pointer"
-            >
-              Resume
-            </button> */}
+							onClick={() => {
+								downloadFileAtURL(PDF)
+							}}
+							className='p-2 text-white underline cursor-pointer'
+						>
+							Resume
+						</button> */}
 						<Btn />
 					</p>
 				</div>
