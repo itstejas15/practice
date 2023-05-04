@@ -1,4 +1,4 @@
-const PDF = "https://practice-itstejas.vercel.app/Tejas-Patil-Resume.pdf"
+const PDF = "https://itstejas-portfolio.vercel.app/Tejas-Patil-Resume.pdf";
 
 const Btn = () => {
 	const downloadFileAtURL = (url) => {
@@ -16,7 +16,7 @@ const Btn = () => {
 				onClick={() => {
 					downloadFileAtURL(PDF)
 				}}
-				className='p-2 text-white underline cursor-pointer'
+				className='p-2 underline cursor-pointer'
 			>
 				Resume
 			</button>
