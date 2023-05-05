@@ -73,7 +73,7 @@ const Navbar = (props) => {
                 <Link href='/#projects'>PROJECTS</Link>
               </li> */}
 							<li className='ml-10 text-sm hover:border-b hover:text-blue-600'>
-								<Link href='https://itstejas-portfolio.vercel.app/Tejas-Patil-Resume.pdf'>RESUME</Link>
+								<Link href={`https://${window?.location?.hostname}/Tejas-Patil-Resume.pdf`}>RESUME</Link>
 							</li>
 							<li className='ml-10 text-sm uppercase hover:border-b hover:text-blue-600'>
 								<Link onClick={sendEmail} href='/#contact'>
@@ -146,11 +146,11 @@ const Navbar = (props) => {
 									</li>
 								</Link>
 								{/* <Link href='/#projects'>
-                  <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                    Projects
-                  </li>
-                </Link> */}
-								<Link href='https://itstejas-portfolio.vercel.app/Tejas-Patil-Resume.pdf'>
+									<li onClick={() => setNav(false)} className='py-4 text-sm'>
+										Projects
+									</li>
+								</Link> */}
+								<Link href={`https://${window?.location?.hostname}/Tejas-Patil-Resume.pdf`}>
 									<li onClick={() => setNav(false)} className='py-4 text-sm'>
 										Resume
 									</li>
@@ -184,7 +184,7 @@ const Navbar = (props) => {
 											<AiOutlineMail />
 										</div>
 									</Link>
-									<Link href='https://itstejas-portfolio.vercel.app/Tejas-Patil-Resume.pdf'>
+									<Link href={`https://${window?.location?.hostname}/Tejas-Patil-Resume.pdf`}>
 										<div
 											onClick={() => setNav(!nav)}
 											className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
