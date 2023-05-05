@@ -1,7 +1,8 @@
 // const PDF = "https://itstejas-portfolio.vercel.app/Tejas-Patil-Resume.pdf";
 
 const Btn = () => {
-	const PDF = `"https://${window.location.hostname}/Tejas-Patil-Resume.pdf"`
+	const hostUrl = window.location.hostname
+	const PDF = `https://${hostUrl}/Tejas-Patil-Resume.pdf`
 	const downloadFileAtURL = (url) => {
 		const fileName = url.split("/").pop()
 		const aTag = document.createElement("a")
