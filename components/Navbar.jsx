@@ -46,7 +46,7 @@ const Navbar = (props) => {
 			setMode("Dark Mode")
 			setDarkLogo(false)
 		}
-	}, [props.handleDark])
+	}, [props.handleDark, props.theme])
 
 	return (
 		<div
