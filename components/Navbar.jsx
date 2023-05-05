@@ -12,6 +12,7 @@ import { AiOutlineMail, AiOutlineMenu } from "react-icons/ai"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 // import { MdDarkMode } from "react-icons/md"
 
+var hostUrl = ''
 const Navbar = (props) => {
 	const [nav, setNav] = useState(false)
 	const [shadow, setShadow] = useState(false)
@@ -31,6 +32,7 @@ const Navbar = (props) => {
 			}
 		}
 		window.addEventListener("scroll", handleShadow)
+    hostUrl = `https://${window?.location?.hostname}/Tejas-Patil-Resume.pdf`
 	}, [])
 
 	const sendEmail = () => {
@@ -73,7 +75,7 @@ const Navbar = (props) => {
                 <Link href='/#projects'>PROJECTS</Link>
               </li> */}
 							<li className='ml-10 text-sm hover:border-b hover:text-blue-600'>
-								<Link href={`https://${window?.location?.hostname}/Tejas-Patil-Resume.pdf`}>RESUME</Link>
+								<Link href={hostUrl}>RESUME</Link>
 							</li>
 							<li className='ml-10 text-sm uppercase hover:border-b hover:text-blue-600'>
 								<Link onClick={sendEmail} href='/#contact'>
@@ -150,7 +152,7 @@ const Navbar = (props) => {
 										Projects
 									</li>
 								</Link> */}
-								<Link href={`https://${window?.location?.hostname}/Tejas-Patil-Resume.pdf`}>
+								<Link href={hostUrl}>
 									<li onClick={() => setNav(false)} className='py-4 text-sm'>
 										Resume
 									</li>
@@ -184,7 +186,7 @@ const Navbar = (props) => {
 											<AiOutlineMail />
 										</div>
 									</Link>
-									<Link href={`https://${window?.location?.hostname}/Tejas-Patil-Resume.pdf`}>
+									<Link href={hostUrl}>
 										<div
 											onClick={() => setNav(!nav)}
 											className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
