@@ -1,4 +1,5 @@
-const PDF = "https://itstejas-portfolio.vercel.app/Tejas-Patil-Resume.pdf";
+// const PDF = "https://itstejas-portfolio.vercel.app/Tejas-Patil-Resume.pdf";
+const PDF = `"https://${window.location.hostname}/Tejas-Patil-Resume.pdf"`
 
 const Btn = () => {
 	const downloadFileAtURL = (url) => {
