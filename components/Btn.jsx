@@ -1,11 +1,10 @@
 import { useEffect } from "react"
-
 // const PDF = "https://itstejas-portfolio.vercel.app/Tejas-Patil-Resume.pdf";
-// const PDF = `https://${window.location.hostname}/Tejas-Patil-Resume.pdf`
-var PDF
+
+var PDF = ''
 const Btn = () => {
 	useEffect(() => {
-	    PDF = `https://${window.location.hostname}/Tejas-Patil-Resume.pdf`
+	    PDF = `https://${window?.location?.hostname}/Tejas-Patil-Resume.pdf`
 	}, [])
 	const downloadFileAtURL = (url) => {
 		const fileName = url.split("/").pop()
