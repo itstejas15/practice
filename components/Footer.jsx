@@ -2,10 +2,9 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div id='footer' className='w-full lg:h-auto overflow-auto dark:bg-gray-800 dark:text-gray-300'>
+    <div id='footer' className='w-full lg:h-auto overflow-auto bg-gray-300 dark:bg-gray-900 dark:text-gray-300'>
       <div
         style={{
-          background: 'lightgray',
           height: '20vh',
           display: 'flex',
           justifyContent: 'center',
