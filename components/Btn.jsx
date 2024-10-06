@@ -8,6 +8,7 @@ const Btn = () => {
 	    PDF = `http://localhost:3000/Tejas-Patil-3-yr-exp-Resume.pdf`
 		} else PDF = `https://${window?.location?.hostname}/Tejas-Patil-3-yr-exp-Resume.pdf`
 	}, [])
+	
 	const downloadFileAtURL = (url) => {
 		const fileName = url.split("/").pop()
 		const aTag = document.createElement("a")
