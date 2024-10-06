@@ -20,7 +20,7 @@ const About = () => {
 				<div className='col-span-2 pt-14'>
 					<p className='uppercase text-xl tracking-widest text-[#5651e5]'>About</p>
 					<h2 className='py-4 dark:text-gray-200'>
-						Tejas Patil <span className='text-sm sm:text-2xl'>| Software Engineer</span>
+						Tejas Patil <span className='text-sm sm:text-2xl'>| Senior Software Engineer</span>
 					</h2>
 					<p className='py-2 text-gray-600 dark:text-gray-300'>
 						I studied engineering from sinhgad academy of engineering, Pune. After finishing engineering in 2021 I started full time job as software engineer in
