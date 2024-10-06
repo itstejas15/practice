@@ -33,13 +33,14 @@ const Navbar = (props) => {
 		}
 		window.addEventListener("scroll", handleShadow)
 		if (window?.location?.hostname == 'localhost') {
-	    hostUrl = `http://localhost:3000/Tejas-Patil-3-yr-exp-Resume.pdf`
+			hostUrl = `http://localhost:3000/Tejas-Patil-3-yr-exp-Resume.pdf`
 		} else hostUrl = `https://${window?.location?.hostname}/Tejas-Patil-3-yr-exp-Resume.pdf`
 	}, [])
 
 	const sendEmail = () => {
 		setNav(!nav)
-		window.open("mailto:er.tejaspatil15@gmail.com?subject=SendMail&body=Description")
+		window.open("mailto:er.tejaspatil15@gmail.com")
+		// window.open("mailto:er.tejaspatil15@gmail.com?subject=SendMail&body=Description")
 	}
 
 	useEffect(() => {
@@ -73,9 +74,9 @@ const Navbar = (props) => {
 							<li className='ml-10 text-sm hover:border-b hover:text-blue-600'>
 								<Link href='/#skills'>SKILLS</Link>
 							</li>
-							{/* <li className='ml-10 text-sm hover:border-b hover:text-blue-600'>
-                <Link href='/#projects'>PROJECTS</Link>
-              </li> */}
+							<li className='ml-10 text-sm hover:border-b hover:text-blue-600'>
+								<Link href='/#projects'>PROJECTS</Link>
+							</li>
 							<li className='ml-10 text-sm hover:border-b hover:text-blue-600'>
 								<Link href={hostUrl}>RESUME</Link>
 							</li>
@@ -149,11 +150,11 @@ const Navbar = (props) => {
 										Skills
 									</li>
 								</Link>
-								{/* <Link href='/#projects'>
+								<Link href='/#projects'>
 									<li onClick={() => setNav(false)} className='py-4 text-sm'>
 										Projects
 									</li>
-								</Link> */}
+								</Link>
 								<Link href={hostUrl}>
 									<li onClick={() => setNav(false)} className='py-4 text-sm'>
 										Resume
