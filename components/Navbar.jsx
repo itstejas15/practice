@@ -32,7 +32,9 @@ const Navbar = (props) => {
 			}
 		}
 		window.addEventListener("scroll", handleShadow)
-    hostUrl = `https://${window?.location?.hostname}/Tejas-Patil-Resume.pdf`
+		if (window?.location?.hostname == 'localhost') {
+	    hostUrl = `http://localhost:3000/Tejas-Patil-3-yr-exp-Resume.pdf`
+		} else hostUrl = `https://${window?.location?.hostname}/Tejas-Patil-3-yr-exp-Resume.pdf`
 	}, [])
 
 	const sendEmail = () => {

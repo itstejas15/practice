@@ -4,7 +4,9 @@ import { useEffect } from "react"
 var PDF = ''
 const Btn = () => {
 	useEffect(() => {
-	    PDF = `https://${window?.location?.hostname}/Tejas-Patil-Resume.pdf`
+		if (window?.location?.hostname == 'localhost') {
+	    PDF = `http://localhost:3000/Tejas-Patil-3-yr-exp-Resume.pdf`
+		} else PDF = `https://${window?.location?.hostname}/Tejas-Patil-3-yr-exp-Resume.pdf`
 	}, [])
 	const downloadFileAtURL = (url) => {
 		const fileName = url.split("/").pop()
